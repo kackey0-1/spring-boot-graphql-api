@@ -1,0 +1,14 @@
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      location: /tmp
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/sample
+    username: root
+    password: root
+mybatis:
+  mapper-locations: classpath*:/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
